@@ -7,5 +7,6 @@
     <string name="apellido">Apellido</string>
     <string name="guardar">GUARDAR</string>
     <string name="limpiar">LIMPIAR</string>
-    <string name="mensaje_error_vacio">Digite algo</string>
+    <string name="mensaje_error_vacio">Digite la informacion faltante</string>
+    <string name="mensaje_persona_guardada">Persona Guardada Exitosamente!</string>
 </resources>
