@@ -19,6 +19,13 @@ public class Persona {
         this.sexo = sexo;
     }
 
+    public Persona(int foto, String cedula, String nombre, String apellido) {
+        this.foto = foto;
+        this.cedula = cedula;
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+
     public int getFoto() {
         return foto;
     }
@@ -58,7 +65,8 @@ public class Persona {
     public void setSexo(int sexo) {
         this.sexo = sexo;
     }
-    public void guardar(){
+
+    public void guardar() {
         Datos.guardarPersona(this);
     }
 }

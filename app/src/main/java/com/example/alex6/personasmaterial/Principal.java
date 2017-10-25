@@ -1,5 +1,6 @@
 package com.example.alex6.personasmaterial;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -31,25 +32,18 @@ public class Principal extends AppCompatActivity {
 
         listado = (RecyclerView)findViewById(R.id.lstPersonas);
         res = this.getResources();
-        personas = new ArrayList<>();
-        personas.add(new Persona(R.drawable.images2,"1140875633","Alex","Hamburger",2));
-        personas.add(new Persona(R.drawable.images3,"1140675633","Giselle","Velez",2));
-        personas.add(new Persona(R.drawable.images,"1140475633","Paola","Mendoza",2));
+      personas = new ArrayList<>();
 
-        personas.add(new Persona(R.drawable.images2,"1140875633","Alex","Hamburger",2));
-        personas.add(new Persona(R.drawable.images3,"1140675633","Giselle","Velez",2));
-        personas.add(new Persona(R.drawable.images,"1140475633","Paola","Mendoza",2));
 
         adapter = new AdaptadorPersona(this,personas);
         llm = new LinearLayoutManager(this);
         listado.setLayoutManager(llm);
-        listado.setAdapter(adapter);
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        listado.setAdapter(adapter);}
 
-    }
-    public void click(View v){
 
-        Snackbar.make(v, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show();
+      public void agregar(View v){
+        Intent i = new Intent(Principal.this,CrearPersonas.class);
+        startActivity(i);
     }
-}
+    }
+
