@@ -9,4 +9,5 @@
     <string name="limpiar">LIMPIAR</string>
     <string name="mensaje_error_vacio">Digite la informacion faltante</string>
     <string name="mensaje_persona_guardada">Persona Guardada Exitosamente!</string>
+    <string name="mensaje_seleccion_imagen">Seleccione la imagen</string>
 </resources>
