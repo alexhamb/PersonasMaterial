@@ -79,7 +79,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="agregar"
+                android:onClick="modificar"
                 android:text="@string/modificar" />
 
             <Button
@@ -88,8 +88,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="limpiar"
-                android:text="@string/limpiar" />
+                android:onClick="eliminar"
+                android:text="@string/eliminar" />
 
         </LinearLayout>
 
