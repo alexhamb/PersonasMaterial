@@ -65,6 +65,7 @@ private ImageView fotoModificar;
 
         if(cedula.equals(b.getString("cedula"))) {
             p.modificar();
+          //  if (uri!=null)subir_foto(b.getString("foto"));
             Snackbar.make(v, R.string.mensaje_persona_modificada_exitosamente,Snackbar.LENGTH_SHORT).setAction("action",null).show();
 
         }else{
